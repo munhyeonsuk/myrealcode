@@ -20,7 +20,6 @@
 
     <title>K디지털 스마트웹앱 프로젝트 마리코</title>
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
@@ -43,6 +42,22 @@
     <link rel="stylesheet" href="./css/mje.css">
     <link rel="stylesheet" href="./css/psh.css">
     <link rel="stylesheet" href="./css/srh.css">
+
+    <style>
+        .popupshow::before{
+            content: "";
+            position:fixed;
+            left: 0; right: 0;
+            top: 0; bottom: 0;
+            background-color: rgba(0,0,0, .5);
+        }
+        #popupform{
+            display: none;
+        }
+        .popupshow #popupform{
+            display: block;
+        }
+    </style>
 
 </head>
 <body>
@@ -69,6 +84,12 @@
     <section id="recommend">
        
     </section>
+    <form class="popupshow">
+        <div id="popupform">
+            여기 폼태그 만든다.
+        </div>
+
+    </form>
 
     <footer></footer>
 
