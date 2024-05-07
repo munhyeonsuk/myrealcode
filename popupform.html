@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .popupshow::before{
+            content: "";
+            position: fixed;
+            left: 0; right: 0;
+            top: 0; bottom: 0;
+            background-color: rgba(0, 0, 0, .5);
+        }
+        #popupform{
+            display: none;
+            background-color: white;
+            min-width: 280px;
+            max-width: 600px;
+            width: 50vw;
+            padding: 1rem;
+            box-sizing: border-box;
+            position: absolute;
+            margin: auto;   /* 바깥여백 똑같이, 그래서 가운데로 정렬*/
+            left: 0; right: 0; top: 0; bottom: 0;
+        }
+        .popupshow #popupform{
+            display: block;
+        }
+    </style>
+   
+</head>
+<body class="popupshow">
+    <div id="popupform">
+        여기 폼태그를 만든다.
+    </div>
+</body>
+</html>
