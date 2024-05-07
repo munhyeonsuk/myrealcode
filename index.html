@@ -67,6 +67,12 @@
         .popupshow #popupform{
             display: block;
         }
+        form li p{
+            display: none;
+        }
+        input[type='text']:focus + p{
+            display: block;
+        }
     </style>
 
 </head>
@@ -95,13 +101,26 @@
        
     </section>
     <div class="popupshow">
-        <form >
         
-        
-
-        </form>
+    
         <div id="popupform">
-            여기 폼태그 만든다.
+            
+            <form action="데이터저장할페이지" name="db명과 같은 이름으로 한다.">
+                <!-- <input type="image" src="./img/btn.jpg"> -->
+                <ul>
+                    <li>
+                        <label for="wr_name">성함</label>
+                        <input type="text" name="wr_name" placeholder="한글명만" id="wr_name">
+                        <p>한글이름만 반드시 쓰셔야해요.</p>
+                    </li>
+                    <li>
+
+                    </li>
+                    <li></li>
+                </ul>
+                <button type="button">작성하기</button>
+            </form>
+
             <button>닫기</button>
         </div>
     </div>
