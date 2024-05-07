@@ -62,9 +62,15 @@
             box-sizing: border-box;
             position: absolute;
             margin: auto;   /* 바깥여백 똑같이, 그래서 가운데로 정렬*/
-            left: 0; right: 0; top: 0; bottom: 0;
+            left: 0; right: 0; top: 3rem; bottom:3rem;
         }
         .popupshow #popupform{
+            display: block;
+        }
+        form li p{
+            display: none;
+        }
+        input[type='text']:focus + P{   /* input 태그인데 타입이 text인 애들만 포커스가 되면 P 태그 나타남 */
             display: block;
         }
     </style>
@@ -96,14 +102,29 @@
     </section>
 
     <div id="popupform">
-        여기 폼태그를 만든다.
+        <form action="데이터 저장할 페이지" name="db명과 같은 이름으로 한다.">
+            <!-- <input type="image" src="./img/btn.jpg">  -->
+            <ul>
+                <li>
+                    <label for="wr_name">성함</label>
+                    <input type="text" name="wr_name" placeholder="한글명만" id="wr_name">
+                    <p>한글이름만 기입해주세요.</p>
+                </li>
+                <li>
+
+                </li>
+                <li></li>
+            </ul>
+            <button type="button">작성하기</button>
+        </form>
+
         <button>닫기</button>
     </div>
 
     <footer id="ft">
 
     </footer>
-    
+
     <script>
         document.querySelector("#popupform button").addEventListener('click', function(){
             document.body.classList = "";
