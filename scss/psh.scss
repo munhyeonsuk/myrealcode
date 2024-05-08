@@ -1,0 +1,41 @@
+#sns {
+    .col-lg-3 {
+        height: 150px;
+    }
+    .snsImg {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        border-radius: 10px;
+        overflow: hidden;
+        background: url(../img/sns1.jpg) no-repeat center;        
+        background-size: 600px;
+        &:hover {
+            margin-top: -30px;
+            margin-bottom: -30px;
+            margin-left: -30px;
+            width: calc(100% + 60px);
+            height: calc(100% + 60px);
+            z-index: 100;
+        }
+        &::after {
+            content: "";
+            background: url(../img/instagram2.svg) no-repeat;
+            width: 13px;
+            height: 13px;
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        img {
+            max-width: 100%;
+            opacity: 0;
+          
+            // object-fit: cover;
+          
+            // transform: scale(1.3);
+        }
+    }
+}
