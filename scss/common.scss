@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 레이블링
 id 이름: 컨텐츠
@@ -9,8 +8,9 @@ J : 민정은
 S : 박소희
 R : 석류화
 */
-body * {
-  font-family: "IBM Plex Sans KR", sans-serif !important;
-  color: #333333;
-  letter-spacing: -1px;
+
+body *{
+    font-family: "IBM Plex Sans KR", sans-serif !important;
+    color: #333333;
+    letter-spacing: -1px;
 }
