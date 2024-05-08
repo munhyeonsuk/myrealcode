@@ -11,6 +11,13 @@ R : 석류화
 
 body *{
     font-family: "IBM Plex Sans KR", sans-serif !important;
-    color: #333333;
+    font-weight: 400;
+    color: #333333;    
     letter-spacing: -1px;
+}
+
+.container-1400 {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
 }
