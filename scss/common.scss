@@ -24,10 +24,19 @@ $fontColorGray : #989797;
 $fontColorSoftGray : #F2F2F2;
 $fontColorDarkBeige : #B2A569;
 
+@mixin badge {
+    background-color: #000000;
+    color: #ffffff;
+}
+
 body *{
     font-family: "IBM Plex Sans KR", sans-serif !important;
     color: #333333;
     letter-spacing: -1px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container-1400{
@@ -40,3 +49,8 @@ body *{
     width: 100%;
     margin: 0 auto;
 }
+
+section {
+    margin: 75px 0;
+}
+
