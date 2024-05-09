@@ -65,7 +65,35 @@
     </section>
 
     <section id="event">
-       
+      section#event>.container.row <!-- .container와 .row 같이 쓰지 않는다. 마진이 둘다 있는데 .row가 이겨서 가운데 정렬이 안됨 -->
+      section#event>.container>.row.align-items-stretch>.titleareaS.flex-grow-1.position-relative+.eventlistS.row.justify-content-between>li*3
+      li.rounded-4.overflow-hidden.bg-white>a.d-block>img.d-block.img-fluid
+                                            div.p-4>h3.mb-3+p.des4S+a>i
+                                            a.d-block.p-4>strong-d-block.mb-3+span.d-block.des4S+i
+      .titleareaS:before {
+        content: "";
+        display: block;
+        position: absolute;
+        to: -2rem;
+        left: -2rem;
+        right: -2rem;
+        bottom: -2rem;
+        //-or-
+        transform: scale(1.2);
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: yellow;
+      }
+      .eventlistS {
+        max-width: 820px;
+      }
+      .des4S {
+        min-height: 4rem;
+      }
+
+
     </section>
 
     <section id="sns">
