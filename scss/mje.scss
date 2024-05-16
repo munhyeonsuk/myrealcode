@@ -118,3 +118,24 @@ body *{
         text-align: center;
     }
 }
+
+#recommend{
+     .half-circle{
+    //     width: 33%;
+    //     height: 100%;
+    //     float: left;
+    //     position: relative;
+    //     overflow: hidden;
+    //     border-radius: 50%;
+    //     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    .card{
+        overflow: hidden;
+        height:300px;
+        border-radius: 100px 100px 0 0;
+        .card-img-top{
+            width:100%;
+        }
+    }
+        
+     }
+}
