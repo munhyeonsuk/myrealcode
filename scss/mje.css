@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* .popupshow::before{
+    content: "";
+    position:fixed;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background-color: rgba(0,0,0, .5);
+}
+#popupform{
+    display: none;
+    background-color: white;
+    min-width: 280px;
+    max-width: 600px;
+    width: 50vw;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: absolute;
+    -- 포지션이 있는 것들이 앞으로 간다.(위로 올라감)
+    margin: auto;    -- 바깥여백 똑같이. 그러니까 가운데 정렬
+    left: 0; right: 0; top: 10vw; bottom: 10vw;
+}
+.popupshow #popupform{
+    display: block;
+}
+form li p{
+    display: none;
+}
+input[type='text']:focus + p{
+    display: block;
+} */
+body * {
+  font-family: "IBM Plex Sans KR", sans-serif !important;
+  color: #333333;
+  letter-spacing: -1px;
+}
+
+#hd {
+  background-color: #FFEBB7;
+}
+#hd a {
+  text-decoration: none;
+  color: #333333;
+}
+#hd .gnb ul {
+  top: 100%;
+  font-size: 0.9em;
+  white-space: nowrap;
+  height: 0;
+  transition: 0.5s;
+  overflow: hidden;
+  min-width: 100px;
+  text-align: center;
+}
+#hd .gnb ul.left {
+  left: -20px !important;
+}
+#hd .gnb ul.event {
+  left: -30px !important;
+  min-width: 108px;
+}
+#hd .gnb ul.reservation {
+  left: -20px !important;
+  min-width: 115px;
+}
+#hd .gnb:hover ul {
+  height: 180px;
+}
+#hd .gnb .d1 > a {
+  font-weight: bold;
+}
+#hd .gnb .d1 li:hover > a {
+  font-weight: bold;
+  text-decoration: underline;
+}
