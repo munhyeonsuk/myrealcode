@@ -107,11 +107,24 @@ body * {
   text-align: center;
 }
 
-#recommend .half-circle .card {
-  overflow: hidden;
-  height: 300px;
-  border-radius: 100px 100px 0 0;
+#recommend h2 {
+  font-weight: bold;
 }
-#recommend .half-circle .card .card-img-top {
-  width: 100%;
+#recommend .card {
+  overflow: hidden;
+  border-radius: 50% 50% 0 0;
+}
+#recommend .card img {
+  width: auto;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#recommend .card p {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
