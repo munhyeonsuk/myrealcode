@@ -107,6 +107,13 @@ body * {
   text-align: center;
 }
 
+#recommend .containerJ {
+  background-color: #FFEBB7;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  height: 550px;
+}
 #recommend h2 {
   font-weight: bold;
 }

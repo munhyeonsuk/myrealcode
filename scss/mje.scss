@@ -124,7 +124,13 @@ body *{
 
 // 국내여행지 추천
 #recommend{
-        
+        .containerJ{
+            background-color: #FFEBB7;
+            max-width: 1920px;
+            width: 100%;
+            margin: 0 auto;
+            height: 550px;
+        }
         h2{
             font-weight: bold;
         }
