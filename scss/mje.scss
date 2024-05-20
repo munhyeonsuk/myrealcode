@@ -134,39 +134,75 @@ body *{
         h2{
             font-weight: bold;
         }
-        .card{
-            overflow: hidden;
-            border-radius: 150px 150px 0 0; 
-            img{
-                width: auto;
-                height: 300px;
-                object-fit: cover;
+        
+        .nbJ{
+            > div{
+                >div{
+                overflow: hidden;
+                border-radius: 122.5px 122.5px 0 0; 
+                .card{
+           
+                    img{
+                        width:245px;
+                        height: 300px;
+                        object-fit: cover;
+                    }
+                    p{
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        margin-bottom: 0;
+                        background-color: rgba(0,0,0,0.5);
+                    }
+                }
             }
-            p{
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                margin-bottom: 0;
-                background-color: rgba(0,0,0,0.5);
+
             }
-        }
-        #bigImg{
-            .pointJ{
-                background-color: white;
+            > :nth-child(5){ 
+                
+                position: relative;
+                
                 width: 334px;
                 height: 450px;
-                overflow: hidden;
-                border-radius: 150px 150px 0 0;
-                margin-left: -17px;
-    
-                // .pointImgJ{
-                //     width: 280px;
-                //     height: 320px;
-                //     object-fit: cover;
-                // }
+                
+                top: -80px;
+                >div{
+                    overflow: hidden;
+                    border-radius: 162.5px 162.5px 0 0; 
+                    border: 17px solid white;
+                    .card{
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                       
+                        p{
+                            background-color: transparent;
+                        }
+                    }
+
+                }
+               
             }
-        } 
+
+        }
+        // #bigImg{
+        //     .pointJ{
+        //         background-color: white;
+        //         width: 334px;
+        //         height: 450px;
+        //         overflow: hidden;
+        //         border-radius: 150px 150px 0 0;
+        //         margin-left: -17px;
+    
+        //         .pointImgJ{
+        //             width: 280px;
+        //             height: 320px;
+        //             object-fit: cover;
+        //         }
+        //     }
+        // } 
 
 
     //  .half-circle{

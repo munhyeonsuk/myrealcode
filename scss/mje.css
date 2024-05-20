@@ -117,17 +117,17 @@ body * {
 #recommend h2 {
   font-weight: bold;
 }
-#recommend .card {
+#recommend .nbJ > div > div {
   overflow: hidden;
-  border-radius: 150px 150px 0 0;
+  border-radius: 122.5px 122.5px 0 0;
 }
-#recommend .card img {
-  width: auto;
+#recommend .nbJ > div > div .card img {
+  width: 245px;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#recommend .card p {
+#recommend .nbJ > div > div .card p {
   top: 0;
   left: 0;
   right: 0;
@@ -135,11 +135,21 @@ body * {
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
-#recommend #bigImg .pointJ {
-  background-color: white;
+#recommend .nbJ > :nth-child(5) {
+  position: relative;
   width: 334px;
   height: 450px;
+  top: -80px;
+}
+#recommend .nbJ > :nth-child(5) > div {
   overflow: hidden;
-  border-radius: 150px 150px 0 0;
-  margin-left: -17px;
+  border-radius: 162.5px 162.5px 0 0;
+  border: 17px solid white;
+}
+#recommend .nbJ > :nth-child(5) > div .card img {
+  width: 100%;
+  height: auto;
+}
+#recommend .nbJ > :nth-child(5) > div .card p {
+  background-color: transparent;
 }
