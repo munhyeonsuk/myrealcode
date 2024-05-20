@@ -136,7 +136,7 @@ body *{
         }
         .card{
             overflow: hidden;
-            border-radius: 50% 50% 0 0; 
+            border-radius: 150px 150px 0 0; 
             img{
                 width: auto;
                 height: 300px;
@@ -151,6 +151,23 @@ body *{
                 background-color: rgba(0,0,0,0.5);
             }
         }
+        #bigImg{
+            .pointJ{
+                background-color: white;
+                width: 334px;
+                height: 450px;
+                overflow: hidden;
+                border-radius: 150px 150px 0 0;
+                margin-left: -17px;
+    
+                // .pointImgJ{
+                //     width: 280px;
+                //     height: 320px;
+                //     object-fit: cover;
+                // }
+            }
+        } 
+
 
     //  .half-circle{
     //     width: 33%;
