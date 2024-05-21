@@ -130,89 +130,49 @@ body *{
             width: 100%;
             margin: 0 auto;
             height: 550px;
+            .recommenBoxJ{
+                &:nth-child(5){
+                    .card{
+                        border-radius: 160px 160px 0 0;
+                        border: 15px solid white;
+                        box-shadow: 0 4px 4px rgba(0,0,0,.25);
+                        transform: translateY(-28%);
+                        img{
+                            width: 280px;
+                            height: 320px;
+                            object-fit: cover;
+                            + div{
+                                display: none !important;
+                            }
+                        }
+                        p{
+                            margin-top: 25px;
+                            font-size: 1rem;
+                        }
+                        
+                    }
+                }
+                .card{
+                    overflow: hidden;
+                    border-radius: 160px 160px 0 0;
+                    img{
+                        width: 245px;
+                        height: 300px;
+                        object-fit: cover;
+                        + div{
+                            background-color: rgba(0,0,0,0.3);
+                        }
+                    }
+                    .textNoneJ{
+                        display: none !important;
+                    }
+                }
+            }
         }
         h2{
             font-weight: bold;
         }
         
-        .nbJ{
-            > div{
-                >div{
-                overflow: hidden;
-                border-radius: 122.5px 122.5px 0 0; 
-                .card{
-           
-                    img{
-                        width:245px;
-                        height: 300px;
-                        object-fit: cover;
-                    }
-                    p{
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                        margin-bottom: 0;
-                        background-color: rgba(0,0,0,0.5);
-                    }
-                }
-            }
-
-            }
-            > :nth-child(5){ 
-                
-                position: relative;
-                
-                width: 334px;
-                height: 450px;
-                
-                top: -80px;
-                >div{
-                    overflow: hidden;
-                    border-radius: 162.5px 162.5px 0 0; 
-                    border: 17px solid white;
-                    .card{
-                        img{
-                            width: 100%;
-                            height: auto;
-                        }
-                       
-                        p{
-                            background-color: transparent;
-                        }
-                    }
-
-                }
-               
-            }
-
-        }
-        // #bigImg{
-        //     .pointJ{
-        //         background-color: white;
-        //         width: 334px;
-        //         height: 450px;
-        //         overflow: hidden;
-        //         border-radius: 150px 150px 0 0;
-        //         margin-left: -17px;
-    
-        //         .pointImgJ{
-        //             width: 280px;
-        //             height: 320px;
-        //             object-fit: cover;
-        //         }
-        //     }
-        // } 
-
-
-    //  .half-circle{
-    //     width: 33%;
-    //     height: 100%;
-    //     float: left;
-    //     position: relative;
-    //     overflow: hidden;
-    //     border-radius: 50%;
-    //     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-
-    
+        
+        
 }

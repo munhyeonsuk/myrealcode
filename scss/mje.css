@@ -114,42 +114,41 @@ body * {
   margin: 0 auto;
   height: 550px;
 }
-#recommend h2 {
-  font-weight: bold;
+#recommend .containerJ .recommenBoxJ:nth-child(5) .card {
+  border-radius: 160px 160px 0 0;
+  border: 15px solid white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transform: translateY(-28%);
 }
-#recommend .nbJ > div > div {
+#recommend .containerJ .recommenBoxJ:nth-child(5) .card img {
+  width: 280px;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#recommend .containerJ .recommenBoxJ:nth-child(5) .card img + div {
+  display: none !important;
+}
+#recommend .containerJ .recommenBoxJ:nth-child(5) .card p {
+  margin-top: 25px;
+  font-size: 1rem;
+}
+#recommend .containerJ .recommenBoxJ .card {
   overflow: hidden;
-  border-radius: 122.5px 122.5px 0 0;
+  border-radius: 160px 160px 0 0;
 }
-#recommend .nbJ > div > div .card img {
+#recommend .containerJ .recommenBoxJ .card img {
   width: 245px;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#recommend .nbJ > div > div .card p {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+#recommend .containerJ .recommenBoxJ .card img + div {
+  background-color: rgba(0, 0, 0, 0.3);
 }
-#recommend .nbJ > :nth-child(5) {
-  position: relative;
-  width: 334px;
-  height: 450px;
-  top: -80px;
+#recommend .containerJ .recommenBoxJ .card .textNoneJ {
+  display: none !important;
 }
-#recommend .nbJ > :nth-child(5) > div {
-  overflow: hidden;
-  border-radius: 162.5px 162.5px 0 0;
-  border: 17px solid white;
-}
-#recommend .nbJ > :nth-child(5) > div .card img {
-  width: 100%;
-  height: auto;
-}
-#recommend .nbJ > :nth-child(5) > div .card p {
-  background-color: transparent;
+#recommend h2 {
+  font-weight: bold;
 }
