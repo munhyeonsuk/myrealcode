@@ -24,7 +24,7 @@
 }
 #sns .snsImgR::after {
   content: "";
-  background: url(/myrealcode/img/instagram2.svg) no-repeat;
+  background: url(../img/instagram2.svg) no-repeat;
   width: 13px;
   height: 13px;
   display: block;
