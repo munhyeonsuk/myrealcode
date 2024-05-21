@@ -118,7 +118,7 @@ body * {
   border-radius: 160px 160px 0 0;
   border: 15px solid white;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  transform: translateY(-28%);
+  transform: translateY(-31%);
 }
 #recommend .containerJ .recommenBoxJ:nth-child(5) .card img {
   width: 280px;
@@ -130,7 +130,7 @@ body * {
   display: none !important;
 }
 #recommend .containerJ .recommenBoxJ:nth-child(5) .card p {
-  margin-top: 25px;
+  margin-bottom: 1rem;
   font-size: 1rem;
 }
 #recommend .containerJ .recommenBoxJ .card {
@@ -151,4 +151,12 @@ body * {
 }
 #recommend h2 {
   font-weight: bold;
+}
+#recommend .line {
+  width: 900px;
+  border: 1px solid #989797;
+  margin-top: 7rem;
+}
+#recommend .line .slideBtnJ {
+  margin: 7rem;
 }

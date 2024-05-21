@@ -136,7 +136,7 @@ body *{
                         border-radius: 160px 160px 0 0;
                         border: 15px solid white;
                         box-shadow: 0 4px 4px rgba(0,0,0,.25);
-                        transform: translateY(-28%);
+                        transform: translateY(-31%);
                         img{
                             width: 280px;
                             height: 320px;
@@ -146,7 +146,7 @@ body *{
                             }
                         }
                         p{
-                            margin-top: 25px;
+                            margin-bottom: 1rem;
                             font-size: 1rem;
                         }
                         
@@ -171,6 +171,14 @@ body *{
         }
         h2{
             font-weight: bold;
+        }
+        .line{
+            width: 900px;
+            border: 1px solid #989797;
+            margin-top: 7rem;
+            .slideBtnJ{
+                margin: 7rem;
+            }
         }
         
         
