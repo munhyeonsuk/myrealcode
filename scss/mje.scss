@@ -124,15 +124,15 @@ body *{
 
 // 국내여행지 추천
 #recommend{
-        .containerJ{
+        .recommendContainerJ{
             background-color: #FFEBB7;
             max-width: 1920px;
             width: 100%;
             margin: 0 auto;
             height: 550px;
-            .recommenBoxJ{
+            .recommendBoxJ{
                 &:nth-child(5){
-                    .card{
+                    .recommendCardJ{
                         border-radius: 160px 160px 0 0;
                         border: 15px solid white;
                         box-shadow: 0 4px 4px rgba(0,0,0,.25);
@@ -146,13 +146,13 @@ body *{
                             }
                         }
                         p{
-                            margin-bottom: 1rem;
                             font-size: 1rem;
+                        
                         }
                         
                     }
                 }
-                .card{
+                .recommendCardJ{
                     overflow: hidden;
                     border-radius: 160px 160px 0 0;
                     img{
@@ -163,7 +163,7 @@ body *{
                             background-color: rgba(0,0,0,0.3);
                         }
                     }
-                    .textNoneJ{
+                    .recommendTextNoneJ{
                         display: none !important;
                     }
                 }
@@ -172,12 +172,28 @@ body *{
         h2{
             font-weight: bold;
         }
-        .line{
+        .recommendLineJ{
             width: 900px;
             border: 1px solid #989797;
             margin-top: 7rem;
-            .slideBtnJ{
-                margin: 7rem;
+            position: relative;
+            &:before{
+                content: "";
+                width: 450px;
+                border: 1px solid #333333;
+                margin-top: 7rem;
+                position: absolute;
+                top: -113px;
+                left: 230px;
+            }
+        }
+
+        
+        div{
+            .recommendSlideBtnJ{
+                
+                margin-top: 6.5rem;
+                margin-left: 3rem;
             }
         }
         

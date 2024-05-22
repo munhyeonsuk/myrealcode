@@ -107,56 +107,66 @@ body * {
   text-align: center;
 }
 
-#recommend .containerJ {
+#recommend .recommendContainerJ {
   background-color: #FFEBB7;
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
   height: 550px;
 }
-#recommend .containerJ .recommenBoxJ:nth-child(5) .card {
+#recommend .recommendContainerJ .recommendBoxJ:nth-child(5) .recommendCardJ {
   border-radius: 160px 160px 0 0;
   border: 15px solid white;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   transform: translateY(-31%);
 }
-#recommend .containerJ .recommenBoxJ:nth-child(5) .card img {
+#recommend .recommendContainerJ .recommendBoxJ:nth-child(5) .recommendCardJ img {
   width: 280px;
   height: 320px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#recommend .containerJ .recommenBoxJ:nth-child(5) .card img + div {
+#recommend .recommendContainerJ .recommendBoxJ:nth-child(5) .recommendCardJ img + div {
   display: none !important;
 }
-#recommend .containerJ .recommenBoxJ:nth-child(5) .card p {
-  margin-bottom: 1rem;
+#recommend .recommendContainerJ .recommendBoxJ:nth-child(5) .recommendCardJ p {
   font-size: 1rem;
 }
-#recommend .containerJ .recommenBoxJ .card {
+#recommend .recommendContainerJ .recommendBoxJ .recommendCardJ {
   overflow: hidden;
   border-radius: 160px 160px 0 0;
 }
-#recommend .containerJ .recommenBoxJ .card img {
+#recommend .recommendContainerJ .recommendBoxJ .recommendCardJ img {
   width: 245px;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#recommend .containerJ .recommenBoxJ .card img + div {
+#recommend .recommendContainerJ .recommendBoxJ .recommendCardJ img + div {
   background-color: rgba(0, 0, 0, 0.3);
 }
-#recommend .containerJ .recommenBoxJ .card .textNoneJ {
+#recommend .recommendContainerJ .recommendBoxJ .recommendCardJ .recommendTextNoneJ {
   display: none !important;
 }
 #recommend h2 {
   font-weight: bold;
 }
-#recommend .line {
+#recommend .recommendLineJ {
   width: 900px;
   border: 1px solid #989797;
   margin-top: 7rem;
+  position: relative;
 }
-#recommend .line .slideBtnJ {
-  margin: 7rem;
+#recommend .recommendLineJ:before {
+  content: "";
+  width: 450px;
+  border: 1px solid #333333;
+  margin-top: 7rem;
+  position: absolute;
+  top: -113px;
+  left: 230px;
+}
+#recommend div .recommendSlideBtnJ {
+  margin-top: 6.5rem;
+  margin-left: 3rem;
 }
