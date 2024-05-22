@@ -107,6 +107,9 @@ body * {
   text-align: center;
 }
 
+#recommend {
+  position: relative;
+}
 #recommend .recommendContainerJ {
   background-color: #FFEBB7;
   max-width: 1920px;
@@ -114,38 +117,53 @@ body * {
   margin: 0 auto;
   height: 550px;
 }
-#recommend .recommendContainerJ .recommendBoxJ:nth-child(5) .recommendCardJ {
+#recommend .recommendContainerJ .recommendBigboxJ {
+  margin-top: 53px;
+}
+#recommend .recommendContainerJ .recommendBigboxJ::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: red;
+  display: block;
+  position: absolute;
+  z-index: 9999;
+  top: 550px;
+}
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ:nth-child(5) .recommendCardJ {
   border-radius: 160px 160px 0 0;
   border: 15px solid white;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  transform: translateY(-31%);
+  transform: translateY(-31.5%);
+  border-width: 22px 22px 16px 22px;
 }
-#recommend .recommendContainerJ .recommendBoxJ:nth-child(5) .recommendCardJ img {
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ:nth-child(5) .recommendCardJ img {
   width: 280px;
   height: 320px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#recommend .recommendContainerJ .recommendBoxJ:nth-child(5) .recommendCardJ img + div {
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ:nth-child(5) .recommendCardJ img + div {
   display: none !important;
 }
-#recommend .recommendContainerJ .recommendBoxJ:nth-child(5) .recommendCardJ p {
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ:nth-child(5) .recommendCardJ p {
   font-size: 1rem;
+  font-weight: 600;
 }
-#recommend .recommendContainerJ .recommendBoxJ .recommendCardJ {
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ .recommendCardJ {
   overflow: hidden;
   border-radius: 160px 160px 0 0;
 }
-#recommend .recommendContainerJ .recommendBoxJ .recommendCardJ img {
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ .recommendCardJ img {
   width: 245px;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#recommend .recommendContainerJ .recommendBoxJ .recommendCardJ img + div {
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ .recommendCardJ img + div {
   background-color: rgba(0, 0, 0, 0.3);
 }
-#recommend .recommendContainerJ .recommendBoxJ .recommendCardJ .recommendTextNoneJ {
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ .recommendCardJ .recommendTextNoneJ {
   display: none !important;
 }
 #recommend h2 {
@@ -154,19 +172,19 @@ body * {
 #recommend .recommendLineJ {
   width: 900px;
   border: 1px solid #989797;
-  margin-top: 7rem;
+  margin-top: 10rem;
   position: relative;
 }
 #recommend .recommendLineJ:before {
   content: "";
   width: 450px;
   border: 1px solid #333333;
-  margin-top: 7rem;
+  margin-top: 10rem;
   position: absolute;
-  top: -113px;
+  top: -161px;
   left: 225px;
 }
 #recommend div .recommendSlideBtnJ {
-  margin-top: 6.5rem;
+  margin-top: 10rem;
   margin-left: 3rem;
 }
