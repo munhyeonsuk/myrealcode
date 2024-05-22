@@ -107,9 +107,6 @@ body * {
   text-align: center;
 }
 
-#recommend {
-  position: relative;
-}
 #recommend .recommendContainerJ {
   background-color: #FFEBB7;
   max-width: 1920px;
@@ -120,22 +117,12 @@ body * {
 #recommend .recommendContainerJ .recommendBigboxJ {
   margin-top: 53px;
 }
-#recommend .recommendContainerJ .recommendBigboxJ::after {
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: red;
-  display: block;
-  position: absolute;
-  z-index: 9999;
-  top: 550px;
-}
 #recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ:nth-child(5) .recommendCardJ {
   border-radius: 160px 160px 0 0;
   border: 15px solid white;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   transform: translateY(-31.5%);
-  border-width: 22px 22px 16px 22px;
+  border-width: 22px 22px 0 22px;
 }
 #recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ:nth-child(5) .recommendCardJ img {
   width: 280px;
@@ -147,6 +134,7 @@ body * {
   display: none !important;
 }
 #recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ:nth-child(5) .recommendCardJ p {
+  height: 96px;
   font-size: 1rem;
   font-weight: 600;
 }
