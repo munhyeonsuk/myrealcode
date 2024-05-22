@@ -123,8 +123,7 @@ body *{
 
 
 // 국내여행지 추천
-#recommend{
-        position: relative;
+#recommend{position: relative;
         .recommendContainerJ{
             background-color: #FFEBB7;
             max-width: 1920px;
@@ -134,7 +133,6 @@ body *{
             .recommendBigboxJ{
                 // transform: translateY(53px);
                 margin-top: 53px;
-                
                 &::after{
                     content: "";
                     width: 100%;
@@ -144,7 +142,6 @@ body *{
                     position: absolute;
                     z-index: 9999;
                     top: 550px;
-                    
                 }
                 .recommendBoxJ{
                     &:nth-child(5){
@@ -165,6 +162,7 @@ body *{
                             p{
                                 font-size: 1rem;
                                 font-weight: 600;
+                                
                             
                             }
                             
@@ -191,6 +189,7 @@ body *{
         }
         h2{
             font-weight: bold;
+            margin-top: 5rem;
         }
         
         .recommendLineJ{
