@@ -95,14 +95,12 @@ body li{
             }
             .utill li{
                 margin-left: 1rem;
-                span{
-                        position: absolute;
-                        width: 0;
-                        height: 0;
-                        display: block;
-                        overflow: hidden;
-                        opacity: 0;
+                .searchIcon{
+                    span{
+                       
                 }
+                }
+                
             }
               
             .searchMenu{
@@ -122,6 +120,11 @@ body li{
                 .dropdownbox {
                     border:1px solid #ccc;
                     padding: 25px;
+                    .searchPopular{
+                        border-top: 0.5px solid black;
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
                 }
 
 
@@ -142,7 +145,7 @@ body li{
         
 
 #ft{
-    margin: 0 auto;
+    margin:0 auto;
     background-color:$mainColor ;
     .footerMenu{
         margin: 0;
@@ -175,7 +178,7 @@ body li{
                 align-items: center;
                 background-color: #000;
                 color: #fff;
-                padding: 10px 20px;
+                padding: 5px 10px;
                 border-radius: 25px;
                 cursor: pointer;
                 i{
@@ -192,10 +195,11 @@ body li{
                 border-radius: 10px;
                 overflow: hidden;
                 z-index: 1000;
-                width: 120px;
-                transform: translateX(5px);
+                width: 100px;
+                transform: translateX(10px) translateY(-10px);
                 font-size: 14px;
                 font-weight: 400;
+                border: 0.5px solid #999999 ;
 
                 li{
                     padding: 10px 20px;

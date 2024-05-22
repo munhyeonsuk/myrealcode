@@ -60,14 +60,6 @@ body li {
 #hd .utill li {
   margin-left: 1rem;
 }
-#hd .utill li span {
-  position: absolute;
-  width: 0;
-  height: 0;
-  display: block;
-  overflow: hidden;
-  opacity: 0;
-}
 #hd .searchMenu {
   position: absolute;
   min-width: 285px;
@@ -86,6 +78,11 @@ body li {
 #hd .searchMenu .dropdownbox {
   border: 1px solid #ccc;
   padding: 25px;
+}
+#hd .searchMenu .dropdownbox .searchPopular {
+  border-top: 0.5px solid black;
+  font-weight: 500;
+  font-size: 14px;
 }
 #hd .searchLi:hover .searchMenu {
   height: 190px !important;
@@ -126,7 +123,7 @@ body li {
   align-items: center;
   background-color: #000;
   color: #fff;
-  padding: 10px 20px;
+  padding: 5px 10px;
   border-radius: 25px;
   cursor: pointer;
 }
@@ -143,10 +140,11 @@ body li {
   border-radius: 10px;
   overflow: hidden;
   z-index: 1000;
-  width: 120px;
-  transform: translateX(5px);
+  width: 100px;
+  transform: translateX(10px) translateY(-10px);
   font-size: 14px;
   font-weight: 400;
+  border: 0.5px solid #999999;
 }
 #ft .footerMenu .language-selector .language-menu li {
   padding: 10px 20px;
