@@ -218,3 +218,108 @@
 #map .mapRightS .mapViewS .mapCategoryPointS p.festival::before {
   background-color: #77C5FF;
 }
+
+#popupform {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+#popupform .popupWrapS {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  max-width: 540px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px 20px 30px;
+  transform: translate3d(-50%, -50%, 0);
+}
+#popupform .popupWrapS .popupHeaderS {
+  border-bottom: 1px solid #989797;
+  padding: 0 10px 10px 10px;
+}
+#popupform .popupWrapS .popupHeaderS h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+#popupform .popupWrapS .popupHeaderS .close {
+  background: transparent;
+  padding: 0;
+  border: 0;
+}
+#popupform .popupWrapS .popupBodyS {
+  padding: 10px;
+}
+#popupform .popupWrapS .popupBodyS ul {
+  margin-bottom: 20px;
+}
+#popupform .popupWrapS .popupBodyS ul li {
+  position: relative;
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+#popupform .popupWrapS .popupBodyS ul li.point {
+  font-size: 14px;
+  padding-left: 0;
+  color: #F34848;
+  margin-bottom: 6px;
+}
+#popupform .popupWrapS .popupBodyS ul li.point::before {
+  display: none;
+}
+#popupform .popupWrapS .popupBodyS ul li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #000;
+  transform: translateY(-50%);
+}
+#popupform .popupWrapS .popupBodyS div {
+  margin-top: 10px;
+}
+#popupform .popupWrapS .popupBodyS div:first-child {
+  margin-top: 0;
+}
+#popupform .popupWrapS .popupBodyS div label {
+  display: block;
+  font-weight: 600;
+  margin: 0 0 2px 10px;
+}
+#popupform .popupWrapS .popupBodyS div select, #popupform .popupWrapS .popupBodyS div input, #popupform .popupWrapS .popupBodyS div textarea {
+  width: 100%;
+  border: 1px solid #989797;
+  border-radius: 12px;
+  font-size: 14px;
+  padding: 6px 10px;
+}
+#popupform .popupWrapS .popupBodyS div select:focus, #popupform .popupWrapS .popupBodyS div select:focus-visible, #popupform .popupWrapS .popupBodyS div input:focus, #popupform .popupWrapS .popupBodyS div input:focus-visible, #popupform .popupWrapS .popupBodyS div textarea:focus, #popupform .popupWrapS .popupBodyS div textarea:focus-visible {
+  border: 1px solid #989797;
+  outline: none;
+}
+#popupform .popupWrapS .popupFooterS {
+  padding: 10px;
+  padding-bottom: 0;
+}
+#popupform .popupWrapS .popupFooterS button {
+  width: 49%;
+  background-color: transparent;
+  border: 1px solid #989797;
+  border-radius: 10px;
+  padding: 6px;
+  color: #000;
+}
+#popupform .popupWrapS .popupFooterS button.confirm {
+  background-color: #000;
+  color: #fff;
+}
