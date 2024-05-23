@@ -1001,14 +1001,6 @@
           }
         });
     
-        // document.getElementById('selected-language').addEventListener('click', function(event) {
-        //   var languageMenu = document.getElementById('language-menu');
-        //   var languageButton = document.getElementById('language-button');
-        //   if (!languageButton.contains(event.target)) {
-        //     languageMenu.style.display = 'none';
-        //   }
-        // });
-    
         document.querySelectorAll('.language-menu li').forEach(function(item) {
           item.addEventListener('click', function() {
             document.querySelector('.language-menu li.active').classList.remove('active');
