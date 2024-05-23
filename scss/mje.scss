@@ -7,7 +7,7 @@
         height: 550px;
         .recommendBigboxJ{
             // transform: translateY(53px);
-            margin-top: 53px;
+            margin-top: 41px;
             
             .recommendBoxJ{
                 &:nth-child(5){
@@ -58,19 +58,23 @@
         font-weight: bold;
         margin-top: 5rem;
     }
+    .recommendTextJ{
+        font-size: 20px;
+        font-weight: 400px;
+    }
     
     .recommendLineJ{
         width: 900px;
         border: 1px solid #989797;
-        margin-top: 10rem;
+        margin-top: 9rem;
         position: relative;
         &:before{
             content: "";
             width: 450px;
             border: 1px solid #333333;
-            margin-top: 10rem;
+            margin-top: 9rem;
             position: absolute;
-            top: -161px;
+            top: -145px;
             left: 225px;
         }
     }
@@ -79,7 +83,7 @@
     div{
         .recommendSlideBtnJ{
             
-            margin-top: 10rem;
+            margin-top: 8.5rem;
             margin-left: 3rem;
         }
     }
