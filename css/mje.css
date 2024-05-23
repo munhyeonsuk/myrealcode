@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* .popupshow::before{
+    content: "";
+    position:fixed;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background-color: rgba(0,0,0, .5);
+}
+#popupform{
+    display: none;
+    background-color: white;
+    min-width: 280px;
+    max-width: 600px;
+    width: 50vw;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: absolute;
+    -- 포지션이 있는 것들이 앞으로 간다.(위로 올라감)
+    margin: auto;    -- 바깥여백 똑같이. 그러니까 가운데 정렬
+    left: 0; right: 0; top: 10vw; bottom: 10vw;
+}
+.popupshow #popupform{
+    display: block;
+}
+form li p{
+    display: none;
+}
+input[type='text']:focus + p{
+    display: block;
+} */
+body * {
+  font-family: "IBM Plex Sans KR", sans-serif !important;
+  color: #333333;
+  letter-spacing: -1px;
+}
+
+#hd {
+  background-color: #FFEBB7;
+}
+#hd a {
+  text-decoration: none;
+  color: #333333;
+}
+#hd .gnb ul {
+  top: 100%;
+  font-size: 0.9em;
+  white-space: nowrap;
+  height: 0;
+  transition: 0.5s;
+  overflow: hidden;
+  min-width: 100px;
+  text-align: center;
+}
+#hd .gnb ul.left {
+  left: -20px !important;
+}
+#hd .gnb ul.event {
+  left: -30px !important;
+  min-width: 108px;
+}
+#hd .gnb ul.reservation {
+  left: -20px !important;
+  min-width: 115px;
+}
+#hd .gnb:hover ul {
+  height: 180px;
+}
+#hd .gnb .d1 > a {
+  font-weight: bold;
+}
+#hd .gnb .d1 li:hover > a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#sns .snsImg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#sns .snsImg::after {
+  content: "";
+  background: url(../img/instagram2.svg) no-repeat;
+  width: 13px;
+  height: 13px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#sns .snsImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+#sns .snsColor {
+  color: #B2A569;
+  font-weight: bold;
+}
+#sns h2 {
+  font-weight: bold;
+}
+#sns .right li strong {
+  width: 97px;
+  text-align: center;
+}
+
+#recommend .recommendContainerJ {
+  background-color: #FFEBB7;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  height: 550px;
+}
+#recommend .recommendContainerJ .recommendBigboxJ {
+  margin-top: 53px;
+}
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ:nth-child(5) .recommendCardJ {
+  border-radius: 160px 160px 0 0;
+  border: 15px solid white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transform: translateY(-31.5%);
+  border-width: 22px 22px 0 22px;
+}
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ:nth-child(5) .recommendCardJ img {
+  width: 280px;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ:nth-child(5) .recommendCardJ img + div {
+  display: none !important;
+}
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ:nth-child(5) .recommendCardJ p {
+  height: 96px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ .recommendCardJ {
+  overflow: hidden;
+  border-radius: 160px 160px 0 0;
+}
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ .recommendCardJ img {
+  width: 245px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ .recommendCardJ img + div {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#recommend .recommendContainerJ .recommendBigboxJ .recommendBoxJ .recommendCardJ .recommendTextNoneJ {
+  display: none !important;
+}
+#recommend h2 {
+  font-weight: bold;
+  margin-top: 5rem;
+}
+#recommend .recommendLineJ {
+  width: 900px;
+  border: 1px solid #989797;
+  margin-top: 10rem;
+  position: relative;
+}
+#recommend .recommendLineJ:before {
+  content: "";
+  width: 450px;
+  border: 1px solid #333333;
+  margin-top: 10rem;
+  position: absolute;
+  top: -161px;
+  left: 225px;
+}
+#recommend div .recommendSlideBtnJ {
+  margin-top: 10rem;
+  margin-left: 3rem;
+}
