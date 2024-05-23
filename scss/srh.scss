@@ -127,17 +127,17 @@
                 .button-prev{
                     width: 10px;
                     height: 10px;
-                    background: url(../img/mainLeft.svg) no-repeat;
+                    background: url(/myrealcode/img/mainLeft.svg) no-repeat;
                 }
                 .button-next{
                     width: 10px;
                     height: 10px;
-                    background: url(../img/mainRight.svg) no-repeat;
+                    background: url(/myrealcode/img/mainRight.svg) no-repeat;
                 }
                 .button-stop{
                     width: 7px;
                     height: 10px;
-                    background: url(../img/mainStop.svg) no-repeat;
+                    background: url(/myrealcode/img/mainStop.svg) no-repeat;
                 }
             }
         }
@@ -179,7 +179,7 @@
         
         &::after {
             content: "";
-            background: url(../img/instagram2.svg) no-repeat;
+            background: url(/myrealcode/img/instagram2.svg) no-repeat;
             width: 13px;
             height: 13px;
             display: block;

@@ -33,7 +33,7 @@ $fontColorDarkBeige : #B2A569;
 
 #map {
     position: relative;
-    background: url(../img/mapBg6.png) repeat-x center bottom;
+    background: url(/myrealcode/img/mapBg6.png) repeat-x center bottom;
     padding: 100px 0 90px;
     &::before,
     &::after {
@@ -43,7 +43,7 @@ $fontColorDarkBeige : #B2A569;
         background-repeat: no-repeat;
     }
     &::before {
-        background-image: url(../img/mapBg4.png);
+        background-image: url(/myrealcode/img/mapBg4.png);
         right: 0;
         top: 0;
         width: 12vw;
@@ -51,7 +51,7 @@ $fontColorDarkBeige : #B2A569;
         background-size: contain;
     }
     &::after {        
-        background-image: url(../img/mapBg5.png);
+        background-image: url(/myrealcode/img/mapBg5.png);
         left: 0;
         bottom: 0;
         width: 14vw;
@@ -68,7 +68,7 @@ $fontColorDarkBeige : #B2A569;
         padding: 0;
     }
     .mapLeftS {
-        max-width: 350px;
+        max-width: 352px;
         margin-left: 70px;
         .mapTitleS{
             position: relative;
@@ -83,12 +83,12 @@ $fontColorDarkBeige : #B2A569;
                 height: 8vw;
             }
             &::before {
-                background-image: url(../img/mapBg3.png);
+                background-image: url(/myrealcode/img/mapBg3.png);
                 top: 2vw;
                 left: -10vw;
             }
             &::after {
-                background-image: url(../img/mapBg2.png);
+                background-image: url(/myrealcode/img/mapBg2.png);
                 top: 4vw;
                 right: -12vw;
             }
@@ -121,7 +121,7 @@ $fontColorDarkBeige : #B2A569;
                 p {
                     &::after {
                         content: "";
-                        background: url(../img/EventArrow.svg) no-repeat;
+                        background: url(/myrealcode/img/EventArrow.svg) no-repeat;
                         width: 44px;
                         height: 100%;
                         display: block;
@@ -165,7 +165,7 @@ $fontColorDarkBeige : #B2A569;
         &::before {
             content: "";
             display: block;
-            background: url(../img/mapBg1.png) no-repeat;
+            background: url(/myrealcode/img/mapBg1.png) no-repeat;
             background-size: contain;
             width: 8vw;
             height: 8vw;

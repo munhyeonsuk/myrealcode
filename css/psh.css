@@ -2,7 +2,7 @@
 /*공통 스타일*/
 #map {
   position: relative;
-  background: url(../img/mapBg6.png) repeat-x center bottom;
+  background: url(/myrealcode/img/mapBg6.png) repeat-x center bottom;
   padding: 100px 0 90px;
 }
 #map::before, #map::after {
@@ -12,7 +12,7 @@
   background-repeat: no-repeat;
 }
 #map::before {
-  background-image: url(../img/mapBg4.png);
+  background-image: url(/myrealcode/img/mapBg4.png);
   right: 0;
   top: 0;
   width: 12vw;
@@ -20,7 +20,7 @@
   background-size: contain;
 }
 #map::after {
-  background-image: url(../img/mapBg5.png);
+  background-image: url(/myrealcode/img/mapBg5.png);
   left: 0;
   bottom: 0;
   width: 14vw;
@@ -37,7 +37,7 @@
   padding: 0;
 }
 #map .mapLeftS {
-  max-width: 350px;
+  max-width: 352px;
   margin-left: 70px;
 }
 #map .mapLeftS .mapTitleS {
@@ -58,12 +58,12 @@
   height: 8vw;
 }
 #map .mapLeftS .mapTitleS::before {
-  background-image: url(../img/mapBg3.png);
+  background-image: url(/myrealcode/img/mapBg3.png);
   top: 2vw;
   left: -10vw;
 }
 #map .mapLeftS .mapTitleS::after {
-  background-image: url(../img/mapBg2.png);
+  background-image: url(/myrealcode/img/mapBg2.png);
   top: 4vw;
   right: -12vw;
 }
@@ -97,7 +97,7 @@
 }
 #map .mapLeftS .mapInfoS .mapInfoWrapS p::after {
   content: "";
-  background: url(../img/EventArrow.svg) no-repeat;
+  background: url(/myrealcode/img/EventArrow.svg) no-repeat;
   width: 44px;
   height: 100%;
   display: block;
@@ -134,7 +134,7 @@
 #map .mapRightS::before {
   content: "";
   display: block;
-  background: url(../img/mapBg1.png) no-repeat;
+  background: url(/myrealcode/img/mapBg1.png) no-repeat;
   background-size: contain;
   width: 8vw;
   height: 8vw;
