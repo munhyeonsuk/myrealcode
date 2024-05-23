@@ -3,7 +3,7 @@ body li {
 }
 
 #hd {
-  background-color: #FFEBB7 !important;
+  background-color: transparent !important;
 }
 #hd h1,
 #hd .utill {
@@ -73,7 +73,7 @@ body li {
   height: 0;
   font-size: 14px;
   font-weight: 400;
-  transform: translateY(-25%) translateX(5%);
+  transform: translateY(-25%) translateX(9%);
 }
 #hd .searchMenu .dropdownbox {
   border: 1px solid #ccc;
@@ -119,6 +119,7 @@ body li {
   display: inline-block;
 }
 #ft .footerMenu .language-selector .language-button {
+  width: 107px;
   display: flex;
   align-items: center;
   background-color: #000;
@@ -188,7 +189,14 @@ body li {
   bottom: 0;
 }
 #quick li {
-  padding: 5px 0;
+  margin: 8px 0;
+}
+#quick li.questionIcon {
+  background-color: white;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 #quick li:hover span {
   display: block;
