@@ -69,15 +69,14 @@ body li {
   font-weight: 400;
   background-color: white;
   border-radius: 15px;
-  right: 0;
+  top: -9px;
+  right: -21px;
   height: 0;
   font-size: 14px;
   font-weight: 400;
-  transform: translateY(-25%) translateX(9%);
 }
 #hd .searchMenu .dropdownbox {
-  border: 1px solid #ccc;
-  padding: 25px;
+  padding: 10px 20px 20px;
 }
 #hd .searchMenu .dropdownbox .searchPopular {
   border-top: 0.5px solid black;
@@ -85,7 +84,8 @@ body li {
   font-size: 14px;
 }
 #hd .searchLi:hover .searchMenu {
-  height: 190px !important;
+  height: 184px !important;
+  border: 1px solid #ccc;
 }
 
 #ft {
@@ -121,15 +121,13 @@ body li {
 #ft .footerMenu .language-selector .language-button {
   width: 107px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: #000;
   color: #fff;
   padding: 5px 10px;
   border-radius: 25px;
   cursor: pointer;
-}
-#ft .footerMenu .language-selector .language-button i {
-  margin-right: 10px;
 }
 #ft .footerMenu .language-selector .language-menu {
   display: none;
@@ -187,16 +185,30 @@ body li {
   justify-content: center;
   top: 0;
   bottom: 0;
+  z-index: 999;
 }
 #quick li {
   margin: 8px 0;
 }
 #quick li.questionIcon {
-  background-color: white;
+  position: relative;
   width: 56px;
   height: 56px;
   border-radius: 50%;
   overflow: hidden;
+}
+#quick li.questionIcon::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  z-index: -1;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
 }
 #quick li:hover span {
   display: block;
