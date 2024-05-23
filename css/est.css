@@ -11,15 +11,10 @@
 }
 #eventE .containerE {
   letter-spacing: -0.085rem;
-  font-family: "IBM Plex Sans KR";
 }
 #eventE .containerE h3 {
   font-size: 30px;
   font-weight: bold;
-}
-#eventE .containerE a {
-  text-decoration: none;
-  list-style: none;
 }
 #eventE .containerE .LearnMoreE {
   width: 97px;
@@ -30,8 +25,8 @@
   line-height: 37px;
   text-align: center;
   color: white;
-  line-height: 37px;
-  text-align: center;
+  font-size: 14px !important;
+  font-weight: 600 !important;
 }
 #eventE .beforeRoundE {
   position: relative;
