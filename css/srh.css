@@ -1,32 +1,23 @@
 @charset "UTF-8";
 #mainslider {
-  background-color: #f9d6d6;
-  width: 100%;
-  height: 844px;
+  height: 800px;
   position: relative;
-  overflow: hidden;
+  transition: 0.5s;
 }
-#mainslider::after {
-  content: "";
-  display: block;
-  position: absolute;
-  background-color: #ffffff;
-  width: 100%;
-  height: 44px;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
+#mainslider .mainwrapper {
+  position: relative;
+  margin-left: -750px;
+  overflow-x: hidden;
 }
-#mainslider .mainTextbox {
-  width: 700px;
-}
-#mainslider .mainTextbox .mainSlidetext {
+#mainslider .mainwrapper .mainTextbox {
+  max-width: 700px;
   margin-top: 396px;
-  margin-left: 260px;
+  min-width: 420px;
+  width: 20vw;
 }
-#mainslider .mainTextbox .mainSlidetext p {
+#mainslider .mainwrapper .mainTextbox .mainSlidetext p {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   color: white;
   background: #000;
   border-radius: 30px;
@@ -36,18 +27,18 @@
   justify-content: center;
   align-items: center;
 }
-#mainslider .mainTextbox .mainSlidetext strong {
+#mainslider .mainwrapper .mainTextbox .mainSlidetext strong {
   font-size: 36px;
   font-weight: 500;
   line-height: 46px;
   letter-spacing: -6%;
 }
-#mainslider .mainTextbox .mainSlidetext .text-with-underline {
+#mainslider .mainwrapper .mainTextbox .mainSlidetext .text-with-underline {
   text-decoration: none;
   font-size: 18px;
   margin-bottom: 1px; /* 텍스트와 밑줄 사이의 공간 조정 */
 }
-#mainslider .mainTextbox .mainSlidetext .text-with-underline::after {
+#mainslider .mainwrapper .mainTextbox .mainSlidetext .text-with-underline::after {
   content: "";
   display: block;
   height: 1px;
@@ -55,100 +46,89 @@
   margin-top: 1px;
   width: 4.8rem;
 }
+#mainslider .mainwrapper .mainPagebox .swiper-progress-bar {
+  bottom: 17px;
+  right: 60%;
+  height: 2px;
+  background: #ccc;
+  overflow: hidden;
+  position: absolute;
+  width: 170px;
+}
+#mainslider .mainwrapper .mainPagebox .swiper-progress-bar .slide_progress-bar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#mainslider .mainwrapper .mainPagebox .swiper-progress-bar .slide_progress-bar .fill {
+  background: #000;
+  height: 100%;
+  width: 0%; /* 초기 너비 설정 */
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: width 5s linear;
+}
+#mainslider .mainwrapper .mainPagebox .numberui {
+  margin-left: 200px;
+  align-items: center;
+  font-size: 15px;
+  letter-spacing: 0 !important;
+}
+#mainslider .mainwrapper .mainPagebox .numberui .swiper-pagination-current {
+  color: #000;
+}
+#mainslider .mainwrapper .mainPagebox .numberui .swiper-pagination-total {
+  color: #666;
+}
+#mainslider .mainwrapper .mainPagebox .btn {
+  position: absolute;
+  bottom: 7px;
+  right: 20%;
+  width: 60px;
+  padding: 0 3px;
+  border: 0;
+  z-index: 100000;
+}
+#mainslider .mainwrapper .mainPagebox .btn .button-prev {
+  margin: 0;
+  border: 0;
+  width: 10px;
+  height: 11px;
+  background: url("/myrealcode/img/mainLeft.svg") no-repeat;
+  background-size: 10px;
+}
+#mainslider .mainwrapper .mainPagebox .btn .button_autoControl {
+  overflow: hidden;
+  display: inline-block;
+  padding: 0;
+  width: 10px;
+  height: 11px;
+  border: none;
+  background: url("/myrealcode/img/mainStop.svg") no-repeat;
+}
+#mainslider .mainwrapper .mainPagebox .btn .button_autoControl.play {
+  background: url("/myrealcode/img/mainPlay.svg") no-repeat;
+}
+#mainslider .mainwrapper .mainPagebox .btn .button-next {
+  margin: 0;
+  border: 0;
+  width: 10px;
+  height: 11px;
+  background: url("/myrealcode/img/mainRight.svg") no-repeat;
+}
 #mainslider .mainImgbox {
   margin-top: 264px;
-  margin-right: 206px;
   height: 580px;
   z-index: 2;
-}
-#mainslider .mainImgbox img {
-  margin-right: 27px;
-  border-radius: 10px;
   width: 1100px;
+}
+#mainslider .mainImgbox .swiper-slide img {
+  border-radius: 10px;
+  width: 100%;
   height: 580px;
   -o-object-fit: cover;
   object-fit: cover;
-}
-#mainslider .mainPagebox {
-  position: absolute;
-  margin-left: 260px;
-  z-index: 3;
-  bottom: 0;
-}
-#mainslider .mainPagebox .Page {
-  width: 374px;
-  height: 44px;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-#mainslider .mainPagebox .Page .swiper-progress-bar {
-  position: relative;
-  width: 180px;
-  z-index: 2;
-  height: 2px;
-  background: #989797;
-  margin-right: 25px;
-}
-#mainslider .mainPagebox .Page .swiper-progress-bar .slide_progress-bar {
-  position: absolute;
-  height: 2px;
-  background: #989797;
-  width: auto;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-#mainslider .mainPagebox .Page .swiper-progress-bar .fill {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 50px;
-  background: #000;
-  z-index: 1;
-}
-#mainslider .mainPagebox .Page .swiper-pagination {
-  width: 44px;
-  height: 44px;
-  position: static;
-  font-size: 15px;
-  font-weight: 400;
-}
-#mainslider .mainPagebox .Page .swiper-pagination .swiper-pagination-current2 {
-  color: #989797;
-}
-#mainslider .mainPagebox .Page .btn {
-  position: relative;
-  height: 44px;
-  width: 59px;
-  margin-left: 65px;
-  padding: 0;
-  border: 0;
-  text-align: center;
-}
-#mainslider .mainPagebox .Page .btn .button-prev {
-  width: 10px;
-  height: 10px;
-  background: url(/myrealcode/img/mainLeft.svg) no-repeat;
-}
-#mainslider .mainPagebox .Page .btn .button-next {
-  width: 10px;
-  height: 10px;
-  background: url(/myrealcode/img/mainRight.svg) no-repeat;
-}
-#mainslider .mainPagebox .Page .btn .button-stop {
-  width: 7px;
-  height: 10px;
-  background: url(/myrealcode/img/mainStop.svg) no-repeat;
-}
-@keyframes fillProgress {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
 }
 
 #sns img {
